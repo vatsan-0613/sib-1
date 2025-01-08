@@ -96,7 +96,15 @@ body{
 
 .blue-txt{
     color : rgba(0, 175, 239, 1);
-    font-size: 50px;
+}
+
+.stat-text{
+    font-size: 3em;
+}
+
+.section-text{
+    font-size: 36px;
+    font-weight: 600;
 }
 
 #stats{
@@ -111,6 +119,14 @@ body{
 .icon-1{
     top : -75%;
     right : 8% ;
+}
+
+.blue-arrow{
+    width: 5%;
+}
+
+.b-text{
+    color : #65D6FF;
 }
 
 .carousel{
@@ -190,17 +206,15 @@ body{
     margin-bottom : 10%;
 }
 
-.show-box{
-    border-radius : 8px; 
-    padding-left : 1%;
-    width: 75%;
-    margin: 0 auto;
-    border : 1px solid rgba(192, 192, 192, 1);
-    height: 80px;
-}
 
 .show-box-cont{
-    margin-top : 5%;
+    padding-left: 2%;
+    margin-top: 5%;
+    border-radius : 8px; 
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    border : 1px solid rgba(192, 192, 192, 1);
 }
 
 #freq-asked-questions{
@@ -311,6 +325,8 @@ textarea{
 .product-img{
     border-radius: 10px;
 }
+
+  
 
 @media (max-width: 992px) {
     .hero-img{

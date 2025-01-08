@@ -20,7 +20,6 @@ import client6 from "./assets/client-6.svg";
 import client7 from "./assets/client-7.svg";
 import leftArrow from "./assets/left-arrow-dark.png";
 import rightArrow from "./assets/right-arrow-light.png";
-import star from "./assets/star.svg";
 import profile1 from "./assets/profile-1.svg";
 import phone from "./assets/phone.svg";
 import phoneFooter from "./assets/phone-footer.svg";
@@ -30,8 +29,42 @@ import indiaMap from "./assets/india-mar.svg";
 import jdLogo from "./assets/jd.png";
 import whatsapp from "./assets/whatsapp.svg";
 import ProductCarousel from './ProductCarousel';
+import TestimonialCarousel from './TestimonialCarousel'
+import Accordion from './Accordian';
 
 const Home = () => {
+
+  const accordionData = [
+    {
+      id: 1,
+      number: "01",
+      question: "Do you provide installation services for your products?",
+      answer:
+        "Yes, we provide installation services for all our products to ensure a hassle-free experience.",
+    },
+    {
+      id: 2,
+      number: "02",
+      question: "What is your return policy?",
+      answer:
+        "We have a 30-day return policy for all unused and undamaged products with their original packaging.",
+    },
+    {
+      id: 3,
+      number: "03",
+      question: "Do you offer warranty on your products?",
+      answer:
+        "Yes, all our products come with a one-year warranty covering manufacturing defects.",
+    },
+    {
+      id: 4,
+      number: "04",
+      question: "How can I track my order?",
+      answer:
+        "You can track your order through the tracking link provided in the confirmation email.",
+    },
+  ];
+  
   return (
     <>
     <section className="mt-5" id="hero">
@@ -76,7 +109,7 @@ const Home = () => {
         className="d-flex container justify-content-evenly flex-lg-row flex-column"
       >
         <div className="text-center">
-          <p className="blue-txt fw-semibold">80+</p>
+          <p className="blue-txt fw-semibold stat-text">80+</p>
           <p>Satisfied Clients</p>
         </div>
         <div
@@ -84,7 +117,7 @@ const Home = () => {
           className="vertical-line"
         ></div>
         <div className="text-center">
-          <p className="blue-txt fw-semibold">100+</p>
+          <p className="blue-txt fw-semibold stat-text">100+</p>
           <p>Satisfied Clients</p>
         </div>
         <div
@@ -92,114 +125,15 @@ const Home = () => {
           className="vertical-line"
         ></div>
         <div className="text-center">
-          <p className="blue-txt fw-semibold">25+</p>
+          <p className="blue-txt fw-semibold stat-text">25+</p>
           <p>Products</p>
         </div>
       </div>
     </section>
-    <section id="products" className="overflow-hidden">
-      <h2 className="text-center fw-semibold">
-        Products we <span className="blue-txt">offer for you</span>
-      </h2>
-      <p className="text-center">With lots of unique blocks,</p>
-      <div className="buttons d-flex mb-5">
-        <button
-          className="forward ms-auto arrow-btn"
-          id="backward-btn"
-        >
-          <img src={leftArrow} alt="" />
-        </button>
-        <button
-          className="Backward me-5 arrow-btn"
-          id="forward-btn"
-        >
-          <img src={rightArrow} alt="" />
-        </button>
-      </div>
-      <div className="carousel d-flex gap-5" id="product-carousel">
-        <div className="product-card">
-          <img src={carousel1} alt="" className="carousel-img" />
-          <h5 className="mt-2 mb-2">Product Name</h5>
-          <p className="para-text">
-            With lots of unique blocks, you can easily build a page without
-            coding. Build your next landing page.With lots of unique blocks, you
-            can easily build a page without coding. Build your next landing
-            page.
-          </p>
-          <p><span className="b-text">Read More</span></p>
-        </div>
-        <div className="product-card">
-          <img src={carousel1} alt="" className="carousel-img" />
-          <h5 className="mt-2 mb-2">Product Name</h5>
-          <p className="para-text">
-            With lots of unique blocks, you can easily build a page without
-            coding. Build your next landing page.With lots of unique blocks, you
-            can easily build a page without coding. Build your next landing
-            page.
-          </p>
-          <p><span className="b-text">Read More</span></p>
-        </div>
-        <div className="product-card">
-          <img src={carousel1} alt="" className="carousel-img" />
-          <h5 className="mt-2 mb-2">Product Name</h5>
-          <p className="para-text">
-            With lots of unique blocks, you can easily build a page without
-            coding. Build your next landing page.With lots of unique blocks, you
-            can easily build a page without coding. Build your next landing
-            page.
-          </p>
-          <p><span className="b-text">Read More</span></p>
-        </div>
-        <div className="product-card">
-          <img src={carousel1} alt="" className="carousel-img" />
-          <h5 className="mt-2 mb-2">Product Name</h5>
-          <p className="para-text">
-            With lots of unique blocks, you can easily build a page without
-            coding. Build your next landing page.With lots of unique blocks, you
-            can easily build a page without coding. Build your next landing
-            page.
-          </p>
-          <p><span className="b-text">Read More</span></p>
-        </div>
-        <div className="product-card">
-          <img src={carousel1} alt="" className="carousel-img" />
-          <h5 className="mt-2 mb-2">Product Name</h5>
-          <p className="para-text">
-            With lots of unique blocks, you can easily build a page without
-            coding. Build your next landing page.With lots of unique blocks, you
-            can easily build a page without coding. Build your next landing
-            page.
-          </p>
-          <p><span className="b-text">Read More</span></p>
-        </div>
-        <div className="product-card">
-          <img src={carousel1} alt="" className="carousel-img" />
-          <h5 className="mt-2 mb-2">Product Name</h5>
-          <p className="para-text">
-            With lots of unique blocks, you can easily build a page without
-            coding. Build your next landing page.With lots of unique blocks, you
-            can easily build a page without coding. Build your next landing
-            page.
-          </p>
-          <p><span className="b-text">Read More</span></p>
-        </div>
-        <div className="product-card">
-          <img src={carousel1} alt="" className="carousel-img" />
-          <h5 className="mt-2 mb-2">Product Name</h5>
-          <p className="para-text">
-            With lots of unique blocks, you can easily build a page without
-            coding. Build your next landing page.With lots of unique blocks, you
-            can easily build a page without coding. Build your next landing
-            page.
-          </p>
-          <p><span className="b-text">Read More</span></p>
-        </div>
-      </div>
-    </section>
-    {/* <ProductCarousel/> */}
+    <ProductCarousel/>
     <section id="services">
       <div className="service-box">
-        <h1 className="text-center">
+        <h1 className="text-center section-text">
           Services we <span className="blue-txt">provide</span>
         </h1>
         <div className="d-flex gap-1 mt-5">
@@ -218,30 +152,27 @@ const Home = () => {
             <div className="d-flex align-items-start gap-2 pe-5">
               <img src={serviceIcon2} alt="" className="me-2" />
               <div>
-                <h4 className="fw-semibold">Product Supply</h4>
+                <h4 className="fw-semibold">Installation and Maintenance</h4>
                 <p>
-                  We offer a wide range of high-quality pneumatics and safety
-                  products from leading manufacturers.
+                Our team provides installation services for our products and ongoing maintenance to ensure optimal performance and safety.
                 </p>
               </div>
             </div>
             <div className="d-flex align-items-start gap-2 pe-5">
               <img src={serviceIcon3} alt="" className="me-2" />
               <div>
-                <h4 className="fw-semibold">Product Supply</h4>
+                <h4 className="fw-semibold">Consultation</h4>
                 <p>
-                  We offer a wide range of high-quality pneumatics and safety
-                  products from leading manufacturers.
+                We offer consultation services to help customers identify the most suitable products and solutions for their specific needs.
                 </p>
               </div>
             </div>
             <div className="d-flex align-items-start gap-2 pe-5">
               <img src={serviceIcon4} alt="" className="me-2" />
               <div>
-                <h4 className="fw-semibold">Product Supply</h4>
+                <h4 className="fw-semibold">Training</h4>
                 <p>
-                  We offer a wide range of high-quality pneumatics and safety
-                  products from leading manufacturers.
+                We provide training programs to educate customers on the proper use and maintenance of pneumatics and safety equipment, promoting a culture of safety within their organizations.
                 </p>
               </div>
             </div>
@@ -262,7 +193,7 @@ const Home = () => {
       </div>
     </section>
     <section id="clients">
-      <h1 className="text-center">Our <span className="blue-txt">Clients</span></h1>
+      <h1 className="text-center section-text">Our <span className="blue-txt">Clients</span></h1>
       <p className="text-center">
         We have been working with some Fortune 500+ clients
       </p>
@@ -278,141 +209,17 @@ const Home = () => {
         </div>
       </div>
     </section>
-    <section id="testimonials" className="overflow-hidden">
-      <h1 className="text-center">Our Customer Say 
-        Something <span className="blue-txt">About Us</span></h1>
-        <div className="buttons d-flex mb-5">
-          <button
-            className="forward ms-auto arrow-btn"
-            onClick="slideTestimonialBackward()"
-            id="backward-test-btn"
-          >
-            <img src={leftArrow} alt=""/>
-          </button>
-          <button
-            className="Backward me-5 arrow-btn"
-            onClick="slideTestimonialForward()"
-            id="forward-test-btn"
-          >
-            <img src={rightArrow} alt=""/>
-          </button>
-        </div>
-        <div className="carousel d-flex gap-5" id="test-carousel">
-          <div className="testimonial-card">
-            <div>
-              <img src={star} alt=""/>
-              <img src={star} alt=""/>
-              <img src={star} alt=""/>
-              <img src={star} alt=""/>
-              <img src={star} alt=""/>
-            </div>
-            <p className="mt-3">
-              We will also facilitate the business marketing of these products with our SEO experts so that they become a ready to use website & help sell product from company
-            </p>
-            <div className="d-flex align-items-center">
-              <img src={profile1}alt="" className="me-2"/>
-              <div>
-                <p className="mb-0 fw-semibold mt-3">Amir Uddin</p>
-                <p className="mt-0">UX Designer</p>
-              </div>
-            </div>
-          </div>
-          <div className="testimonial-card">
-            <div>
-              <img src={star} alt=""/>
-              <img src={star} alt=""/>
-              <img src={star} alt=""/>
-              <img src={star} alt=""/>
-              <img src={star} alt=""/>
-            </div>
-            <p className="mt-3">
-              We will also facilitate the business marketing of these products with our SEO experts so that they become a ready to use website & help sell product from company
-            </p>
-            <div className="d-flex align-items-center">
-              <img src={profile1} alt="" className="me-2"/>
-              <div>
-                <p className="mb-0 fw-semibold mt-3">Amir Uddin</p>
-                <p className="mt-0">UX Designer</p>
-              </div>
-            </div>
-          </div>
-          <div className="testimonial-card">
-            <div>
-              <img src={star} alt=""/>
-              <img src={star} alt=""/>
-              <img src={star} alt=""/>
-              <img src={star} alt=""/>
-              <img src={star} alt=""/>
-            </div>
-            <p className="mt-3">
-              We will also facilitate the business marketing of these products with our SEO experts so that they become a ready to use website & help sell product from company
-            </p>
-            <div className="d-flex align-items-center">
-              <img src={profile1} alt="" className="me-2"/>
-              <div>
-                <p className="mb-0 fw-semibold mt-3">Amir Uddin</p>
-                <p className="mt-0">UX Designer</p>
-              </div>
-            </div>
-          </div>
-          <div className="testimonial-card">
-            <div>
-              <img src={star} alt=""/>
-              <img src={star} alt=""/>
-              <img src={star} alt=""/>
-              <img src={star} alt=""/>
-              <img src={star} alt=""/>
-            </div>
-            <p className="mt-3">
-              We will also facilitate the business marketing of these products with our SEO experts so that they become a ready to use website & help sell product from company
-            </p>
-            <div className="d-flex align-items-center">
-              <img src={profile1} alt="" className="me-2"/>
-              <div>
-                <p className="mb-0 fw-semibold mt-3">Amir Uddin</p>
-                <p className="mt-0">UX Designer</p>
-              </div>
-            </div>
-          </div>
-        </div>  
-    </section>
+    <TestimonialCarousel />
     <section id="freq-asked-questions">
-        <h1 className="text-center">Frequently Ask <span className="blue-txt">Questions</span></h1>
-        <div className="container show-box-cont">
-          <div className="show-box d-flex justify-content-between align-items-center mt-5">
-            <div className="fw-semibold fs-4">01</div>
-            <div className="fs-5">Do you provide installation services for your  products?</div>
-            <div className="plus-icon d-flex justify-content-center align-items-center"><span>+</span></div>
-          </div>
-          <div className="show-box d-flex justify-content-between align-items-center mt-5">
-            <div className="fw-semibold fs-4">02</div>
-            <div className="fs-5">Do you provide installation services for your  products?</div>
-            <div className="plus-icon d-flex justify-content-center align-items-center"><span>+</span></div>
-          </div>
-          <div className="show-box d-flex justify-content-between align-items-center mt-5">
-            <div className="fw-semibold fs-4">03</div>
-            <div className="fs-5">Do you provide installation services for your  products?</div>
-            <div className="plus-icon d-flex justify-content-center align-items-center"><span>+</span></div>
-          </div>
-          <div className="show-box d-flex justify-content-between align-items-center mt-5">
-            <div className="fw-semibold fs-4">04</div>
-            <div className="fs-5">Do you provide installation services for your  products?</div>
-            <div className="plus-icon d-flex justify-content-center align-items-center"><span>+</span></div>
-          </div>
-          <div className="show-box d-flex justify-content-between align-items-center mt-5">
-            <div className="fw-semibold fs-4">05</div>
-            <div className="fs-5">Do you provide installation services for your  products?</div>
-            <div className="plus-icon d-flex justify-content-center align-items-center"><span>+</span></div>
-          </div>
-          <div className="show-box d-flex justify-content-between align-items-center mt-5">
-            <div className="fw-semibold fs-4">06</div>
-            <div className="fs-5">Do you provide installation services for your  products?</div>
-            <div className="plus-icon d-flex justify-content-center align-items-center"><span>+</span></div>
-          </div>
+        <h1 className="text-center section-text mb-5 fw-semibold">Frequently Ask <span className="blue-txt">Questions</span></h1>
+        <div className="container">
+          {accordionData.map((item, index) => (
+            <Accordion num={index+1} heading={item.question} content={item.answer} />
+          ))}
         </div>
     </section>
     <section id="footer">
-      <h1 className="text-center">Let's Get <span className="blue-txt">Connected</span></h1>
+      <h1 className="text-center section-text">Let's Get <span className="blue-txt">Connected</span></h1>
       <p className="text-center">Let’s make something new, different and more meaningful or make thing more visual or conceptual</p>
       <div className="container mt-5 d-flex justify-content-between gap-5 mb-5 px-3 py-3 ">
         <div className="d-flex flex-column gap-3">
@@ -422,7 +229,7 @@ const Home = () => {
             </div>
             <div>
               <p className="mb-0 mt-3">Call me</p>
-              <p className="">+8801613968687</p>
+              <p className="fw-semibold">+8801613968687</p>
             </div>
           </div>
           <div className="d-flex align-items-center gap-3">
@@ -431,7 +238,7 @@ const Home = () => {
             </div>
             <div>
               <p className="mb-0 mt-3">Email me</p>
-              <p className="">ahvir8687@gmail.com</p>
+              <p className="fw-semibold">ahvir8687@gmail.com</p>
             </div>
           </div>
           <div className="d-flex align-items-center gap-3">
@@ -440,7 +247,7 @@ const Home = () => {
             </div>
             <div>
               <p className="mb-0 mt-3">Address</p>
-              <p className="">Anna nagar, Chennai.</p>
+              <p className="fw-semibold">Anna nagar, Chennai.</p>
             </div>
           </div>
         </div>

@@ -97,7 +97,7 @@ const About = () => {
         className="d-flex container justify-content-evenly flex-lg-row flex-column"
       >
         <div className="text-center">
-          <p className="blue-txt fw-semibold">80+</p>
+          <p className="blue-txt fw-semibold stat-text">80+</p>
           <p>Satisfied Clients</p>
         </div>
         <div
@@ -108,7 +108,7 @@ const About = () => {
   className="vertical-line"
 ></div>
         <div className="text-center">
-          <p className="blue-txt fw-semibold">100+</p>
+          <p className="blue-txt fw-semibold stat-text">100+</p>
           <p>Satisfied Clients</p>
         </div>
         <div
@@ -119,7 +119,7 @@ const About = () => {
   className="vertical-line"
 ></div>
         <div className="text-center">
-          <p className="blue-txt fw-semibold">25+</p>
+          <p className="blue-txt fw-semibold stat-text">25+</p>
           <p>Products</p>
         </div>
       </div>
