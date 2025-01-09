@@ -10,37 +10,37 @@ const Products = () => {
                     <img src="assets/product-image.png" alt="" className="product-img" />
                     <h4 className="fw-semibold mt-3 mb-2">Product name</h4>
                     <p className="product-desc">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
-                    <p className="blue-txt read-more">Read More</p>
+                    <p className="blue-txt read-more">Read More <img src="/assets/blue-arrow.png" alt="" className="blue-arrow ms-2"/></p>
                 </div>
                 <div className="col-6">
                     <img src="assets/product-image.png" alt="" className="product-img" />
                     <h4 className="fw-semibold mt-3 mb-2">Product name</h4>
                     <p className="product-desc">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
-                    <p className="blue-txt read-more">Read More</p>
+                    <p className="blue-txt read-more">Read More <img src="/assets/blue-arrow.png" alt="" className="blue-arrow ms-2"/></p>
                 </div>
                 <div className="col-6 mt-5">
                     <img src="assets/product-image.png" alt="" className="product-img" />
                     <h4 className="fw-semibold mt-3 mb-2">Product name</h4>
                     <p className="product-desc">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
-                    <p className="blue-txt read-more">Read More</p>
+                    <p className="blue-txt read-more">Read More <img src="/assets/blue-arrow.png" alt="" className="blue-arrow ms-2"/></p>
                 </div>
                 <div className="col-6 mt-5">
                     <img src="assets/product-image.png" alt="" className="product-img" />
                     <h4 className="fw-semibold mt-3 mb-2">Product name</h4>
                     <p className="product-desc">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
-                    <p className="blue-txt read-more">Read More</p>
+                    <p className="blue-txt read-more">Read More <img src="/assets/blue-arrow.png" alt="" className="blue-arrow ms-2"/></p>
                 </div>
                 <div className="col-6 mt-5">
                     <img src="assets/product-image.png" alt="" className="product-img" />
                     <h4 className="fw-semibold mt-3 mb-2">Product name</h4>
                     <p className="product-desc">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
-                    <p className="blue-txt read-more">Read More</p>
+                    <p className="blue-txt read-more">Read More <img src="/assets/blue-arrow.png" alt="" className="blue-arrow ms-2"/></p>
                 </div>
                 <div className="col-6 mt-5">
                     <img src="assets/product-image.png" alt="" className="product-img" />
                     <h4 className="fw-semibold mt-3 mb-2">Product name</h4>
                     <p className="product-desc">With lots of unique blocks, you can easily build a page without coding. Build your next landing page.With lots of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
-                    <p className="blue-txt read-more">Read More</p>
+                    <p className="blue-txt read-more">Read More <img src="/assets/blue-arrow.png" alt="" className="blue-arrow ms-2"/></p>
                 </div>
             </div>
         </div>
@@ -56,7 +56,7 @@ const Products = () => {
             </div>
             <div>
               <p className="mb-0 mt-3">Call me</p>
-              <p className="">+8801613968687</p>
+              <p className="fw-semibold">+8801613968687</p>
             </div>
           </div>
           <div className="d-flex align-items-center gap-3">
@@ -65,7 +65,7 @@ const Products = () => {
             </div>
             <div>
               <p className="mb-0 mt-3">Email me</p>
-              <p className="">ahvir8687@gmail.com</p>
+              <p className="fw-semibold">ahvir8687@gmail.com</p>
             </div>
           </div>
           <div className="d-flex align-items-center gap-3">
@@ -74,7 +74,7 @@ const Products = () => {
             </div>
             <div>
               <p className="mb-0 mt-3">Address</p>
-              <p className="">Anna nagar, Chennai.</p>
+              <p className="fw-semibold">Anna nagar, Chennai.</p>
             </div>
           </div>
         </div>

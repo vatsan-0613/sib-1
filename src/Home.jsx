@@ -72,10 +72,10 @@ const Home = () => {
         className="container d-flex flex-lg-row flex-column-reverse justify-content-between align-items-center"
       >
         <div>
-          <h1 className="fw-bold fs-1 lh-base mb-5 hero-text">
+          <p className="fw-bold lh-base mb-3 hero-text">
             A Tradition of Excellence commitment to quality of product
-          </h1>
-          <button className="menu-btn">View Products</button>
+          </p>
+          <button className="menu-btn hero-btn">View Products</button>
         </div>
         <div>
           <img src={hero} alt="hero-img" className="hero-img" />
@@ -108,25 +108,25 @@ const Home = () => {
       <div
         className="d-flex container justify-content-evenly flex-lg-row flex-column"
       >
-        <div className="text-center">
+        <div>
           <p className="blue-txt fw-semibold stat-text">80+</p>
-          <p>Satisfied Clients</p>
+          <p className="text-stat-title">Satisfied Clients</p>
         </div>
         <div
-          style={{borderLeft: '1.5px solid rgba(0, 175, 239, 1)', height:'100px'}}
+          style={{borderLeft: '1.5px solid rgba(0, 175, 239, 1)', height:'130px'}}
           className="vertical-line"
         ></div>
-        <div className="text-center">
+        <div>
           <p className="blue-txt fw-semibold stat-text">100+</p>
-          <p>Satisfied Clients</p>
+          <p className="text-stat-title">Satisfied Clients</p>
         </div>
         <div
-          style={{borderLeft: '1.5px solid rgba(0, 175, 239, 1)', height:'100px'}}
+          style={{borderLeft: '1.5px solid rgba(0, 175, 239, 1)', height:'130px'}}
           className="vertical-line"
         ></div>
-        <div className="text-center">
+        <div>
           <p className="blue-txt fw-semibold stat-text">25+</p>
-          <p>Products</p>
+          <p className="text-stat-title">Products</p>
         </div>
       </div>
     </section>
@@ -136,11 +136,11 @@ const Home = () => {
         <h1 className="text-center section-text">
           Services we <span className="blue-txt">provide</span>
         </h1>
-        <div className="d-flex gap-1 mt-5">
+        <div className="d-flex mt-5">
           <img src={servicIcon} alt="" className="service-img" />
           <div className="d-flex flex-column justify-content-between">
             <div className="d-flex align-items-start gap-2 pe-5">
-              <img src={serviceIcon1} alt="" className="me-2" />
+              <img src={serviceIcon1} alt="" className="me-2 mt-3 pe-3" />
               <div>
                 <h4 className="fw-semibold">Product Supply</h4>
                 <p>
@@ -149,8 +149,8 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="d-flex align-items-start gap-2 pe-5">
-              <img src={serviceIcon2} alt="" className="me-2" />
+            <div className="d-flex align-items-start pe-5">
+              <img src={serviceIcon2} alt="" className="me-2 mt-3 pe-3" />
               <div>
                 <h4 className="fw-semibold">Installation and Maintenance</h4>
                 <p>
@@ -159,7 +159,7 @@ const Home = () => {
               </div>
             </div>
             <div className="d-flex align-items-start gap-2 pe-5">
-              <img src={serviceIcon3} alt="" className="me-2" />
+              <img src={serviceIcon3} alt="" className="me-2 mt-3 pe-3" />
               <div>
                 <h4 className="fw-semibold">Consultation</h4>
                 <p>
@@ -168,7 +168,7 @@ const Home = () => {
               </div>
             </div>
             <div className="d-flex align-items-start gap-2 pe-5">
-              <img src={serviceIcon4} alt="" className="me-2" />
+              <img src={serviceIcon4} alt="" className="me-2 mt-3 pe-3" />
               <div>
                 <h4 className="fw-semibold">Training</h4>
                 <p>
@@ -187,14 +187,14 @@ const Home = () => {
           <span className="round-icon"
             ><img src={playBtn} alt=""
           /></span>
-          <h3 className="fs-1 mt-2">How do we help you ?</h3>
-          <p>View all your products</p>
+          <h3 className="section-text mt-2">How do we help you ?</h3>
+          <p className='help-sub-text'>View all your products</p>
         </div>
       </div>
     </section>
     <section id="clients">
       <h1 className="text-center section-text">Our <span className="blue-txt">Clients</span></h1>
-      <p className="text-center">
+      <p className="text-center para-text">
         We have been working with some Fortune 500+ clients
       </p>
       <div className="container mt-5 mb-5">

@@ -45,7 +45,7 @@ const About = () => {
     </section>
     <section id="description" className="mt-5">
       <div className="container">
-        <h2 className="text-center">Who are <span className="blue-txt">we</span></h2>
+        <h2 className="text-center section-text mb-4">Who are <span className="blue-txt">we</span></h2>
         <p className="mt-3">
           Welcome to our platform, your trusted destination for top-quality
           pneumatic and safety solutions. With a dedication to excellence and a
@@ -96,31 +96,25 @@ const About = () => {
       <div
         className="d-flex container justify-content-evenly flex-lg-row flex-column"
       >
-        <div className="text-center">
+        <div>
           <p className="blue-txt fw-semibold stat-text">80+</p>
-          <p>Satisfied Clients</p>
+          <p className="text-stat-title">Satisfied Clients</p>
         </div>
         <div
-  style={{
-    borderLeft: "1.5px solid rgba(0, 175, 239, 1)",
-    height: "100px"
-  }}
-  className="vertical-line"
-></div>
-        <div className="text-center">
+          style={{borderLeft: '1.5px solid rgba(0, 175, 239, 1)', height:'130px'}}
+          className="vertical-line"
+        ></div>
+        <div>
           <p className="blue-txt fw-semibold stat-text">100+</p>
-          <p>Satisfied Clients</p>
+          <p className="text-stat-title">Satisfied Clients</p>
         </div>
         <div
-  style={{
-    borderLeft: "1.5px solid rgba(0, 175, 239, 1)",
-    height: "100px"
-  }}
-  className="vertical-line"
-></div>
-        <div className="text-center">
+          style={{borderLeft: '1.5px solid rgba(0, 175, 239, 1)', height:'130px'}}
+          className="vertical-line"
+        ></div>
+        <div>
           <p className="blue-txt fw-semibold stat-text">25+</p>
-          <p>Products</p>
+          <p className="text-stat-title">Products</p>
         </div>
       </div>
     </section>
@@ -128,39 +122,39 @@ const About = () => {
         <div className="d-flex container gap-3 mb-5">
             <img src="assets/about-image-1.svg" alt="" className="about-img-1" />
             <div className="align-self-center">
-                <h3 className="fw-semibold">Our Vision</h3>
-                <p>Our vision is to become a leading provider of pneumatics and safety solutions, recognized for our innovation, reliability, and commitment to customer satisfaction. We strive to continuously improve and adapt to the evolving needs of the industry while maintaining the highest standards of quality and service.</p>
+                <h3 className="section-text">Our Vision</h3>
+                <p className='about-vision-text'>Our vision is to become a leading provider of pneumatics and safety solutions, recognized for our innovation, reliability, and commitment to customer satisfaction. We strive to continuously improve and adapt to the evolving needs of the industry while maintaining the highest standards of quality and service.</p>
             </div>
         </div>
         <div className="d-flex container gap-3 flex-row-reverse mt-5">
             <img src="assets/about-image-1.svg" alt="" className="about-img-1" />
             <div className="align-self-center">
-                <h3 className="fw-semibold">Our Mision</h3>
-                <p>Our vision is to become a leading provider of pneumatics and safety solutions, recognized for our innovation, reliability, and commitment to customer satisfaction. We strive to continuously improve and adapt to the evolving needs of the industry while maintaining the highest standards of quality and service.</p>
+                <h3 className="section-text">Our Mision</h3>
+                <p className='about-vision-text'>Our vision is to become a leading provider of pneumatics and safety solutions, recognized for our innovation, reliability, and commitment to customer satisfaction. We strive to continuously improve and adapt to the evolving needs of the industry while maintaining the highest standards of quality and service.</p>
             </div>
         </div>
     </section>
     <section id="choose-us">
-        <h2 className="text-center fw-semibold">Why Choose <span className="blue-txt">Us</span></h2>
+        <h2 className="text-center fw-semibold section-text">Why Choose <span className="blue-txt">Us</span></h2>
         <div className="container d-flex mt-5 gap-5 justify-content-between">
-            <div className="text-center choose-card px-3 py-3">
+            <div className="text-center choose-card p-3">
                 <img src="/assets/service-icon-1.svg" alt="" className="mb-5" />
-                <h4>Quality Assurance</h4>
+                <h4 className='choose-card-head'>Quality Assurance</h4>
                 <p className="choose-card-text">We prioritize quality in every aspect of our products and services, ensuring reliability and durability.</p>
             </div>
             <div className="text-center choose-card px-3 py-3">
                 <img src="/assets/service-icon-2.svg" alt="" className="mb-5" />
-                <h4>Expertise</h4>
+                <h4 className='choose-card-head'>Expertise</h4>
                 <p className="choose-card-text">Our team consists of experienced professionals who are experts in the field of pneumatics and safety, providing reliable guidance and support.</p>
             </div>
             <div className="text-center choose-card px-3 py-3">
                 <img src="/assets/service-icon-3.svg" alt="" className="mb-5" />
-                <h4>Custom Solutions</h4>
+                <h4 className='choose-card-head'>Custom Solutions</h4>
                 <p className="choose-card-text">We understand that every customer has unique needs, and we offer customized solutions to meet specific requirements</p>
             </div>
             <div className="text-center choose-card px-3 py-3">
                 <img src="/assets/service-icon-4.svg" alt="" className="mb-5" />
-                <h4>Customer Service</h4>
+                <h4 className='choose-card-head'>Customer Service</h4>
                 <p className="choose-card-text">We are committed to providing exceptional customer service, from initial consultation to after-sales support, ensuring a seamless experience for our clients.</p>
             </div>
         </div>
@@ -203,7 +197,7 @@ const About = () => {
             </div>
             <div>
               <p className="mb-0 mt-3">Call me</p>
-              <p className="">+8801613968687</p>
+              <p className="fw-semibold">+8801613968687</p>
             </div>
           </div>
           <div className="d-flex align-items-center gap-3">
@@ -212,7 +206,7 @@ const About = () => {
             </div>
             <div>
               <p className="mb-0 mt-3">Email me</p>
-              <p className="">ahvir8687@gmail.com</p>
+              <p className="fw-semibold">ahvir8687@gmail.com</p>
             </div>
           </div>
           <div className="d-flex align-items-center gap-3">
@@ -221,7 +215,7 @@ const About = () => {
             </div>
             <div>
               <p className="mb-0 mt-3">Address</p>
-              <p className="">Anna nagar, Chennai.</p>
+              <p className="fw-semibold">Anna nagar, Chennai.</p>
             </div>
           </div>
         </div>

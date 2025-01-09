@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import leftArrow from "./assets/left-arrow-dark.png";
-import rightArrow from "./assets/right-arrow-light.png";
+import leftArrow from "./assets/left-arrow-light.svg";
+import rightArrow from "./assets/right-arrow-dark.svg";
 import profile1 from "./assets/profile-1.svg";
 import star from "./assets/star.svg";
 
@@ -66,22 +66,14 @@ const TestimonialCarousel = () => {
     <section id="testimonials" className="overflow-hidden">
       <h1 className="text-center section-text">Our Customer Say 
         Something <span className="blue-txt">About Us</span></h1>
-        <div className="buttons d-flex mb-5">
-          <button
-            className="forward ms-auto arrow-btn"
-            onClick={slideBackward}
-            id="backward-test-btn"
-          >
-            <img src={leftArrow} alt=""/>
-          </button>
-          <button
-            className="Backward me-5 arrow-btn"
-            onClick={slideForward}
-            id="forward-test-btn"
-          >
-            <img src={rightArrow} alt=""/>
-          </button>
-        </div>
+        <div className="buttons d-flex mb-3 gap-3">
+        <button className="forward left-arrow arrow-btn ms-auto p-0 my-4" onClick={slideBackward} id="backward-btn">
+          <img src={leftArrow} alt="Backward" className="arrow-img"/>
+        </button>
+        <button className="Backward me-5 arrow-btn p-0" onClick={slideForward} id="forward-btn">
+          <img src={rightArrow} alt="Forward" className="arrow-img"/>
+        </button>
+      </div>
         <div className="carousel d-flex gap-5" id="test-carousel" style={{ transform: `translateX(-${productSlide * productWidth}px)`, transition: "transform 0.5s ease-in-out" }}>
           {products.map((item, index) => (
             
