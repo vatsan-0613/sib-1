@@ -29,6 +29,8 @@ const Carousel = () => {
 
   return (
     <section id="products">
+      
+      <img src="assets/boots.png" alt=""  className="boots-icon"/>
       <h2 className="text-center fw-semibold section-text">
         Products we <span className="blue-txt">offer for you</span>
       </h2>
@@ -52,6 +54,9 @@ const Carousel = () => {
           </div>
         ))}
       </div>
+      </div>
+      <div className="d-flex justify-content-center my-5">
+        <button className="menu-btn">View More</button>
       </div>
     </section>
   );

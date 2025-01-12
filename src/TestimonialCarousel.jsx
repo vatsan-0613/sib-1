@@ -64,6 +64,7 @@ const TestimonialCarousel = () => {
 
   return (
     <section id="testimonials" className="overflow-hidden">
+      <img src="assets/icon6.png" alt="" className="icon6"/>
       <h1 className="text-center section-text">Our Customer Say 
         Something <span className="blue-txt">About Us</span></h1>
         <div className="buttons d-flex mb-3 gap-3">

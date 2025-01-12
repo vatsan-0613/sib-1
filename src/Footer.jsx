@@ -62,8 +62,8 @@ const Footer = () => {
       <span>Products</span>
       <span>About</span>
     </div>
-    <div className='lower-footer-item-3 d-flex'>
-      <img src={indiaMap} alt="" className="me-3 footer-item-1"/>
+    <div className='lower-footer-item-3'>
+      <img src={indiaMap} alt="" className="me-3"/>
       <img src={jdLogo} alt="" className="me-3"/>
       <img src={whatsapp} alt=""/>
     </div>

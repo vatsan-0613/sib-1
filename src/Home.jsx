@@ -75,7 +75,7 @@ const Home = () => {
     </section>
     <section id="description" className="mt-5">
       <div className="container-fluid">
-        <p className="desc-text px-5">
+        <p className="desc-text px-lg-5">
           SIB is a leading provider of advanced solutions in pneumatics and
           safety equipment. Boasting extensive experience and a team of
           dedicated professionals, we are unwaveringly dedicated to delivering
@@ -91,14 +91,15 @@ const Home = () => {
       </div>
     </section>
     <section id="stats" className="position-relative">
+      
+      <div
+        className="d-flex container justify-content-evenly flex-lg-row flex-column align-items-center"
+      >
       <img
         src={transparent}
         alt=""
         className="position-absolute icon-1"
       />
-      <div
-        className="d-flex container justify-content-evenly flex-lg-row flex-column align-items-center"
-      >
         <div className='stats-cont'>
           <p className="blue-txt fw-semibold stat-text">80+</p>
           <p className="text-stat-title">Satisfied Clients</p>
@@ -124,6 +125,7 @@ const Home = () => {
     <ProductCarousel/>
     <section id="services">
       <div className="service-box">
+        <img src="assets/icon3.png" alt="" className='icon-3'/>
         <h1 className="text-center section-text">
           Services we <span className="blue-txt">provide</span>
         </h1>
@@ -169,6 +171,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <img src="assets/icon4.png" alt="" className='icon-4'/>
       </div>
     </section>
     <section id="help">
@@ -184,6 +187,7 @@ const Home = () => {
       </div>
     </section>
     <section id="clients">
+      <img src="assets/icon5.png" alt="" className='icon-5'/>
       <h1 className="text-center section-text">Our <span className="blue-txt">Clients</span></h1>
       <p className="text-center para-text">
         We have been working with some Fortune 500+ clients
@@ -216,12 +220,14 @@ const Home = () => {
     </section>
     <TestimonialCarousel />
     <section id="freq-asked-questions">
+        <img src="assets/icon7.png" alt="" className='icon7'/>
         <h1 className="text-center section-text mb-5 fw-semibold">Frequently Ask <span className="blue-txt">Questions</span></h1>
         <div className="container">
           {accordionData.map((item, index) => (
             <Accordion num={index+1} heading={item.question} content={item.answer} />
           ))}
         </div>
+        <img src="assets/icon8.png" alt="" className='icon8'/>
     </section>
     <Footer />
   </>

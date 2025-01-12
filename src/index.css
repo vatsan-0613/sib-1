@@ -137,8 +137,35 @@ body{
     width: 100%;
 }
 
+.boots-icon{
+    position: absolute;
+    left : 4%
+}
+
+.icon-3{
+    position: absolute;
+    top : -18%;
+}
+
+.icon-4{
+    position: absolute;
+    bottom: -10%;
+    left : 20%;
+}
+
+#clients{
+    position: relative;
+}
+
+.icon-5{
+    position: absolute;
+    right : 5%;
+    top : -36%;
+}
+
 .icon-1{
-    top : -75%;
+    /* top : -75%; */
+    top : 0;
     right : 8% ;
 }
 
@@ -189,6 +216,7 @@ body{
 .service-box{
     border-left: 100px solid rgba(0, 175, 239, 1);
     min-height: 650px;
+    position: relative;
 }
 
 .service-img{
@@ -208,8 +236,10 @@ body{
 
 .help-text{
     position: absolute;
-    top: 38%;
-    left: 35%;
+    width: 100%;
+    top:38%;
+    left: 0;
+    text-align: center;
     color: #fff;
 }
 
@@ -220,7 +250,7 @@ body{
 }
 
 .round-icon{
-    padding: 3% 4%;
+    padding: 10px 15px;
     background-color: #fff;
     border-radius: 50%;
 }
@@ -240,6 +270,12 @@ body{
 #testimonials{
     margin-top: 10%;
     margin-bottom : 10%;
+    position: relative;
+}
+
+.icon6{
+    position: absolute;
+    left : 5%;
 }
 
 
@@ -255,6 +291,19 @@ body{
 
 #freq-asked-questions{
     margin-bottom: 10%;
+    position: relative;
+}
+
+.icon7{
+    position: absolute; 
+    right : 5%;
+    top : 15%;
+}
+
+.icon8{
+    position: absolute;
+    bottom : 5%;
+    left: 5%;
 }
 
 .plus-icon{
@@ -349,6 +398,7 @@ textarea{
 
 .choose-card{
     background-color: #fff;
+    max-width: 350px;
 }
 
 .choose-card-head{
@@ -450,6 +500,10 @@ textarea{
         font-size: 13px;
     }
 
+    .lower-footer{
+        align-items: center;
+    }
+
     .lower-footer-item-1{
         margin-bottom: 1%;
     }
@@ -491,6 +545,18 @@ textarea{
 
     .product-img{
         width: 100%;
+    }
+
+    .desc-text{
+        font-size: 15px;
+    }
+
+    .text-stat-title{
+        font-size: 20px;
+    }
+
+    .icon-1, .icon-3, .boots-icon, .icon-4, .icon-5, .icon6, .icon7, .icon8{
+        display: none;
     }
 
 }
