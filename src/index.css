@@ -320,10 +320,13 @@ textarea{
     padding : 2% 3%;
 }
 
-.about-hero-content{
+.about-center{
     position: absolute;
-    top: 35%;
-    left:15%;
+    top : 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 30%;
 }
 
 .about-img-1{

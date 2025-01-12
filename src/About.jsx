@@ -37,11 +37,13 @@ const About = () => {
     <>
     <section className="" id="about-hero">
       <img src="/assets/about-hero.png" alt="" className="about-hero-img" />
+      <div className="about-center">
       <div className="about-hero-content text-center">
         <h2 className="fw-semibold about-hero-text">
           A Tradition of Excellence commitment to quality of product
         </h2>
         <button className="menu-btn">View Products</button>
+      </div>
       </div>
     </section>
     <section id="description" className="mt-5">
@@ -60,20 +62,23 @@ const About = () => {
         </p>
 
         <div className="d-flex gap-3 flex-lg-row flex-column-reverse">
+          <div className="d-flex flex-column justify-content-between">
           <p className="pt-3">
             Safety is paramount in everything we do. We recognize the
             significance of maintaining a safe working environment, and our
             selection of safety equipment reflects that. From fire safety
             equipment to personal protective gear, we ensure that our products
             adhere to the highest safety standards, providing you with peace of
-            mind and confidence in your workplace safety measures. <br /><br />
-
+            mind and confidence in your workplace safety measures. 
+          </p>
+          <p>
             With a team of experienced professionals, we are dedicated to
             delivering exceptional customer service and technical support.
             Whether you're looking for expert advice on selecting the right
             pneumatic fittings or need assistance in choosing the appropriate
             fire safety equipment for your facility, our team is here to help.
           </p>
+          </div>
           <img src="assets/about-image-1.svg" alt="" className="about-img-1" />
         </div>
         <p className="mt-5">
@@ -127,7 +132,7 @@ const About = () => {
                 <p className='about-vision-text'>Our vision is to become a leading provider of pneumatics and safety solutions, recognized for our innovation, reliability, and commitment to customer satisfaction. We strive to continuously improve and adapt to the evolving needs of the industry while maintaining the highest standards of quality and service.</p>
             </div>
         </div>
-        <div className="d-flex container gap-3 flex-row-lg-reverse mt-5 flex-column">
+        <div className="d-flex container gap-3 flex-lg-row-reverse mt-5 flex-column">
             <img src="assets/about-image-1.svg" alt="" className="about-img-1" />
             <div className="align-self-center">
                 <h3 className="section-text">Our Mision</h3>

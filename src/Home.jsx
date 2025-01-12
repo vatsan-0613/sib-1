@@ -74,8 +74,8 @@ const Home = () => {
       </div>
     </section>
     <section id="description" className="mt-5">
-      <div className="container">
-        <p className="desc-text">
+      <div className="container-fluid">
+        <p className="desc-text px-5">
           SIB is a leading provider of advanced solutions in pneumatics and
           safety equipment. Boasting extensive experience and a team of
           dedicated professionals, we are unwaveringly dedicated to delivering

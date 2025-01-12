@@ -42,7 +42,7 @@ const Carousel = () => {
         </button>
       </div>
       <div className="overflow-hidden">
-      <div className="carousel d-flex gap-5" id="product-carousel" style={{ transform: `translateX(-${productSlide * productWidth}px)`, transition: "transform 0.5s ease-in-out" }}>
+      <div className="carousel d-flex gap-5 ps-5" id="product-carousel" style={{ transform: `translateX(-${productSlide * productWidth}px)`, transition: "transform 0.5s ease-in-out" }}>
         {products.map((product, index) => (
           <div className="product-card" key={product.id}>
             <img src={product.image} alt="" className="carousel-img" />
