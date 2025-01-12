@@ -18,19 +18,10 @@ import client4 from "./assets/client-4.svg";
 import client5 from "./assets/client-5.svg";
 import client6 from "./assets/client-6.svg";
 import client7 from "./assets/client-7.svg";
-import leftArrow from "./assets/left-arrow-dark.png";
-import rightArrow from "./assets/right-arrow-light.png";
-import profile1 from "./assets/profile-1.svg";
-import phone from "./assets/phone.svg";
-import phoneFooter from "./assets/phone-footer.svg";
-import mail from "./assets/mail.svg";
-import location from "./assets/location.svg";
-import indiaMap from "./assets/india-mar.svg";
-import jdLogo from "./assets/jd.png";
-import whatsapp from "./assets/whatsapp.svg";
 import ProductCarousel from './ProductCarousel';
 import TestimonialCarousel from './TestimonialCarousel'
 import Accordion from './Accordian';
+import Footer from './Footer';
 
 const Home = () => {
 
@@ -106,9 +97,9 @@ const Home = () => {
         className="position-absolute icon-1"
       />
       <div
-        className="d-flex container justify-content-evenly flex-lg-row flex-column"
+        className="d-flex container justify-content-evenly flex-lg-row flex-column align-items-center"
       >
-        <div>
+        <div className='stats-cont'>
           <p className="blue-txt fw-semibold stat-text">80+</p>
           <p className="text-stat-title">Satisfied Clients</p>
         </div>
@@ -116,7 +107,7 @@ const Home = () => {
           style={{borderLeft: '1.5px solid rgba(0, 175, 239, 1)', height:'130px'}}
           className="vertical-line"
         ></div>
-        <div>
+        <div className='stats-cont'>
           <p className="blue-txt fw-semibold stat-text">100+</p>
           <p className="text-stat-title">Satisfied Clients</p>
         </div>
@@ -124,7 +115,7 @@ const Home = () => {
           style={{borderLeft: '1.5px solid rgba(0, 175, 239, 1)', height:'130px'}}
           className="vertical-line"
         ></div>
-        <div>
+        <div className='stats-cont'>
           <p className="blue-txt fw-semibold stat-text">25+</p>
           <p className="text-stat-title">Products</p>
         </div>
@@ -136,10 +127,10 @@ const Home = () => {
         <h1 className="text-center section-text">
           Services we <span className="blue-txt">provide</span>
         </h1>
-        <div className="d-flex mt-5">
+        <div className="d-flex mt-5 flex-lg-row flex-column">
           <img src={servicIcon} alt="" className="service-img" />
-          <div className="d-flex flex-column justify-content-between">
-            <div className="d-flex align-items-start gap-2 pe-5">
+          <div className="d-flex flex-column justify-content-between service-cont-mobile">
+            <div className="d-flex align-items-start gap-2 lg-pe-5">
               <img src={serviceIcon1} alt="" className="me-2 mt-3 pe-3" />
               <div>
                 <h4 className="fw-semibold">Product Supply</h4>
@@ -198,15 +189,29 @@ const Home = () => {
         We have been working with some Fortune 500+ clients
       </p>
       <div className="container mt-5 mb-5">
-        <div className="d-flex justify-content-between">
-          <img src={client1} alt="" />
-          <img src={client2} alt="" />
-          <img src={client3} alt="" />
-          <img src={client4} alt="" />
-          <img src={client5} alt="" />
-          <img src={client6} alt="" />
-          <img src={client7} alt="" />
-        </div>
+      <div className="container">
+  <div className="row">
+    <div className="col-md-2 col-sm-4 col-6 align-self-center d-flex justify-content-center mb-5">
+      <img src={client1} alt="" className="img-fluid" />
+    </div>
+    <div className="col-md-2 col-sm-4 col-6 align-self-center d-flex justify-content-center mb-5">
+      <img src={client2} alt="" className="img-fluid" />
+    </div>
+    <div className="col-md-2 col-sm-4 col-6 align-self-center d-flex justify-content-center mb-5">
+      <img src={client3} alt="" className="img-fluid" />
+    </div>
+    <div className="col-md-2 col-sm-4 col-6 align-self-center d-flex justify-content-center mb-5">
+      <img src={client4} alt="" className="img-fluid" />
+    </div>
+    <div className="col-md-2 col-sm-4 col-6 align-self-center d-flex justify-content-center mb-5">
+      <img src={client5} alt="" className="img-fluid" />
+    </div>
+    <div className="col-md-2 col-sm-4 col-6 align-self-center d-flex justify-content-center mb-5">
+      <img src={client6} alt="" className="img-fluid" />
+    </div>
+  </div>
+</div>
+
       </div>
     </section>
     <TestimonialCarousel />
@@ -218,64 +223,7 @@ const Home = () => {
           ))}
         </div>
     </section>
-    <section id="footer">
-      <h1 className="text-center section-text">Let's Get <span className="blue-txt">Connected</span></h1>
-      <p className="text-center">Let’s make something new, different and more meaningful or make thing more visual or conceptual</p>
-      <div className="container mt-5 d-flex justify-content-between gap-5 mb-5 px-3 py-3 ">
-        <div className="d-flex flex-column gap-3">
-          <div className="d-flex align-items-center gap-3">
-            <div className="footer-icon p-3">
-              <img src={phoneFooter} alt=""/>
-            </div>
-            <div>
-              <p className="mb-0 mt-3">Call me</p>
-              <p className="fw-semibold">+8801613968687</p>
-            </div>
-          </div>
-          <div className="d-flex align-items-center gap-3">
-            <div className="footer-icon p-3">
-              <img src={mail} alt=""/>
-            </div>
-            <div>
-              <p className="mb-0 mt-3">Email me</p>
-              <p className="fw-semibold">ahvir8687@gmail.com</p>
-            </div>
-          </div>
-          <div className="d-flex align-items-center gap-3">
-            <div className="footer-icon p-3">
-              <img src={location} alt=""/>
-            </div>
-            <div>
-              <p className="mb-0 mt-3">Address</p>
-              <p className="fw-semibold">Anna nagar, Chennai.</p>
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          <div className="row">
-          <div className="col-6 mb-3 px-3 py-3"><input type="text" placeholder="Full name"  className="px-3 py-2"/></div>
-          <div className="col-6 mb-3 px-3 py-3"><input type="email" name="" id="" placeholder="Your email" className="px-3 py-2"/></div>
-          <div className="col-6 mb-3 px-3 py-3"><input type="number" placeholder="Phone number" className="px-3 py-2"/></div>
-          <div className="col-6 mb-3 px-3 py-3"><input type="name" className="px-3 py-2" placeholder="Product"/></div>
-          <div><textarea name="" id="" placeholder="Message" className="px-3 py-2 col-12"></textarea></div>
-          <div className="button-space d-flex mt-4"><button className="ms-auto menu-btn">Submit Message</button></div>
-        </div>
-        </div>
-      </div>
-  </section>
-  <section className="lower-footer d-flex container justify-content-between pt-4">
-    <div><p>@ 2024. All Rights Reserved</p></div>
-    <div className="d-flex gap-5">
-      <span>Home</span>
-      <span>Products</span>
-      <span>About</span>
-    </div>
-    <div>
-      <img src={indiaMap} alt="" className="me-3"/>
-      <img src={jdLogo} alt="" className="me-3"/>
-      <img src={whatsapp} alt=""/>
-    </div>
-  </section>
+    <Footer />
   </>
   )
 }

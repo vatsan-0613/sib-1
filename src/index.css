@@ -102,6 +102,10 @@ body{
     font-size: 20px;
 }
 
+.left-arrow{
+    margin-left: 75%;
+}
+
 .desc-text{
     color : rgba(55, 52, 53, 1);
     font-size: 20px;
@@ -177,10 +181,6 @@ body{
     background-color: #fff;
 }
 
-.left-arrow{
-    margin-left: 75%;
-}
-
 #services{
     margin-top: 10%;
     margin-bottom: 10%;
@@ -188,7 +188,7 @@ body{
 
 .service-box{
     border-left: 100px solid rgba(0, 175, 239, 1);
-    height: 650px;
+    min-height: 650px;
 }
 
 .service-img{
@@ -264,7 +264,7 @@ body{
     padding : 1% 2%;
     color : #fff;
     height: 80px;
-    width: 80px;
+    max-width: 80px;
     font-size : 2em;
 }
 
@@ -395,4 +395,98 @@ textarea{
     .vertical-line{
         display: none;
     }
+
+    .stats-cont{
+        text-align: center;
+    }
+
+    .service-box{
+        border : none;
+    }
+
+    .service-img{
+        width:100%; 
+        border-radius: 10px;
+        left : 0;
+    }
+
+    .service-cont-mobile{
+        padding-left: 5%;
+        margin-top: 5%;
+    }
+
+    .help-img{
+        height: 250px;
+    }
+
+    .help-sub-text{
+        font-size: 15px;
+        color: #FFFFFF;
+        opacity: 0.65;
+    }
+
+    .help-text{
+        width: 100%;
+        top:30%;
+        left: 0;
+        text-align: center;
+    }
+
+    .show-box-cont{
+        margin: 0;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .accordian-content{
+        font-size: 15px;
+    }
+
+    .accordian-text{
+        font-size: 10px;
+    }
+
+    .lower-footer-item-1{
+        margin-bottom: 1%;
+    }
+    
+    .lower-footer-item-3{
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+
+    .product-card{
+        width: 350px;
+        padding-left: 3%;
+    }
+
+    .carousel-img{
+        width: 350px;
+    }
+
+    .testimonial-card{
+        width: 360px;
+        padding-left: 5%;
+    }
+
+    .test-desc-text{
+        width: 70%;
+    }
+
+    .about-hero-img{
+        height: 300px;
+    }
+
+    .about-hero-content{
+        left: 0;
+    }
+
+    .about-img-1{
+        width: 100%;
+    }
+
+    .product-img{
+        width: 100%;
+    }
+
 }

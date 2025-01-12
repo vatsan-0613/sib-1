@@ -28,7 +28,7 @@ const Carousel = () => {
   };
 
   return (
-    <section id="products" className="overflow-hidden">
+    <section id="products">
       <h2 className="text-center fw-semibold section-text">
         Products we <span className="blue-txt">offer for you</span>
       </h2>
@@ -37,11 +37,12 @@ const Carousel = () => {
         <button className="forward left-arrow arrow-btn p-0" onClick={slideBackward} id="backward-btn">
           <img src={leftArrow} alt="Backward" className="arrow-img"/>
         </button>
-        <button className="Backward me-5 arrow-btn p-0" onClick={slideForward} id="forward-btn">
+        <button className="Backward arrow-btn p-0" onClick={slideForward} id="forward-btn">
           <img src={rightArrow} alt="Forward" className="arrow-img"/>
         </button>
       </div>
-      <div className="carousel d-flex gap-5 ps-5" id="product-carousel" style={{ transform: `translateX(-${productSlide * productWidth}px)`, transition: "transform 0.5s ease-in-out" }}>
+      <div className="overflow-hidden">
+      <div className="carousel d-flex gap-5" id="product-carousel" style={{ transform: `translateX(-${productSlide * productWidth}px)`, transition: "transform 0.5s ease-in-out" }}>
         {products.map((product, index) => (
           <div className="product-card" key={product.id}>
             <img src={product.image} alt="" className="carousel-img" />
@@ -50,6 +51,7 @@ const Carousel = () => {
             <p><span className="b-text fw-semibold">Read More</span> <img src="/assets/blue-arrow.png" alt="" className="blue-arrow"/></p>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );

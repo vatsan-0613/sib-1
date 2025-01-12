@@ -30,6 +30,7 @@ import indiaMap from "./assets/india-mar.svg";
 import jdLogo from "./assets/jd.png";
 import whatsapp from "./assets/whatsapp.svg";
 import ProductCarousel from './ProductCarousel';
+import Footer from './Footer';
 
 const About = () => {
   return (
@@ -58,7 +59,7 @@ const About = () => {
           accessories, designed to meet the diverse needs of our customers
         </p>
 
-        <div className="d-flex gap-3">
+        <div className="d-flex gap-3 flex-lg-row flex-column-reverse">
           <p className="pt-3">
             Safety is paramount in everything we do. We recognize the
             significance of maintaining a safe working environment, and our
@@ -89,14 +90,14 @@ const About = () => {
     </section>
     <section id="stats" className="position-relative">
       <img
-        src="assets/transparent-icon-1.svg"
+        src={transparent}
         alt=""
         className="position-absolute icon-1"
       />
       <div
-        className="d-flex container justify-content-evenly flex-lg-row flex-column"
+        className="d-flex container justify-content-evenly flex-lg-row flex-column align-items-center"
       >
-        <div>
+        <div className='stats-cont'>
           <p className="blue-txt fw-semibold stat-text">80+</p>
           <p className="text-stat-title">Satisfied Clients</p>
         </div>
@@ -104,7 +105,7 @@ const About = () => {
           style={{borderLeft: '1.5px solid rgba(0, 175, 239, 1)', height:'130px'}}
           className="vertical-line"
         ></div>
-        <div>
+        <div className='stats-cont'>
           <p className="blue-txt fw-semibold stat-text">100+</p>
           <p className="text-stat-title">Satisfied Clients</p>
         </div>
@@ -112,21 +113,21 @@ const About = () => {
           style={{borderLeft: '1.5px solid rgba(0, 175, 239, 1)', height:'130px'}}
           className="vertical-line"
         ></div>
-        <div>
+        <div className='stats-cont'>
           <p className="blue-txt fw-semibold stat-text">25+</p>
           <p className="text-stat-title">Products</p>
         </div>
       </div>
     </section>
     <section id="vision">
-        <div className="d-flex container gap-3 mb-5">
+        <div className="d-flex container gap-3 mb-5 flex-lg-row flex-column">
             <img src="assets/about-image-1.svg" alt="" className="about-img-1" />
             <div className="align-self-center">
                 <h3 className="section-text">Our Vision</h3>
                 <p className='about-vision-text'>Our vision is to become a leading provider of pneumatics and safety solutions, recognized for our innovation, reliability, and commitment to customer satisfaction. We strive to continuously improve and adapt to the evolving needs of the industry while maintaining the highest standards of quality and service.</p>
             </div>
         </div>
-        <div className="d-flex container gap-3 flex-row-reverse mt-5">
+        <div className="d-flex container gap-3 flex-row-lg-reverse mt-5 flex-column">
             <img src="assets/about-image-1.svg" alt="" className="about-img-1" />
             <div className="align-self-center">
                 <h3 className="section-text">Our Mision</h3>
@@ -136,7 +137,7 @@ const About = () => {
     </section>
     <section id="choose-us">
         <h2 className="text-center fw-semibold section-text">Why Choose <span className="blue-txt">Us</span></h2>
-        <div className="container d-flex mt-5 gap-5 justify-content-between">
+        <div className="container d-flex mt-5 gap-5 justify-content-between flex-lg-row flex-column">
             <div className="text-center choose-card p-3">
                 <img src="/assets/service-icon-1.svg" alt="" className="mb-5" />
                 <h4 className='choose-card-head'>Quality Assurance</h4>
@@ -165,113 +166,32 @@ const About = () => {
         We have been working with some Fortune 500+ clients
       </p>
       <div className="container mt-5 mb-5">
-        <div className="d-flex justify-content-between">
-          <img src="/assets/client-1.svg" alt="" />
-          <img src="/assets/client-2.svg" alt="" />
-          <img src="/assets/client-3.svg" alt="" />
-          <img src="/assets/client-4.svg" alt="" />
-          <img src="/assets/client-5.svg" alt="" />
-          <img src="/assets/client-6.svg" alt="" />
-          <img src="/assets/client-7.svg" alt="" />
-        </div>
+      <div className="row">
+    <div className="col-md-2 col-sm-4 col-6 align-self-center d-flex justify-content-center mb-5">
+      <img src={client1} alt="" className="img-fluid" />
+    </div>
+    <div className="col-md-2 col-sm-4 col-6 align-self-center d-flex justify-content-center mb-5">
+      <img src={client2} alt="" className="img-fluid" />
+    </div>
+    <div className="col-md-2 col-sm-4 col-6 align-self-center d-flex justify-content-center mb-5">
+      <img src={client3} alt="" className="img-fluid" />
+    </div>
+    <div className="col-md-2 col-sm-4 col-6 align-self-center d-flex justify-content-center mb-5">
+      <img src={client4} alt="" className="img-fluid" />
+    </div>
+    <div className="col-md-2 col-sm-4 col-6 align-self-center d-flex justify-content-center mb-5">
+      <img src={client5} alt="" className="img-fluid" />
+    </div>
+    <div className="col-md-2 col-sm-4 col-6 align-self-center d-flex justify-content-center mb-5">
+      <img src={client6} alt="" className="img-fluid" />
+    </div>
+  </div>
       </div>
     </section>
     <section id="dummy">
 
     </section>
-    <section id="footer">
-      <h1 className="text-center">
-        Let's Get <span className="blue-txt">Connected</span>
-      </h1>
-      <p className="text-center">
-        Let’s make something new, different and more meaningful or make thing
-        more visual or conceptual
-      </p>
-      <div
-        className="container mt-5 d-flex justify-content-between gap-5 mb-5 px-3 py-3"
-      >
-        <div className="d-flex flex-column gap-3">
-          <div className="d-flex align-items-center gap-3">
-            <div className="footer-icon p-3">
-              <img src="/assets/phone-footer.svg" alt="" />
-            </div>
-            <div>
-              <p className="mb-0 mt-3">Call me</p>
-              <p className="fw-semibold">+8801613968687</p>
-            </div>
-          </div>
-          <div className="d-flex align-items-center gap-3">
-            <div className="footer-icon p-3">
-              <img src="/assets/mail.svg" alt="" />
-            </div>
-            <div>
-              <p className="mb-0 mt-3">Email me</p>
-              <p className="fw-semibold">ahvir8687@gmail.com</p>
-            </div>
-          </div>
-          <div className="d-flex align-items-center gap-3">
-            <div className="footer-icon p-3">
-              <img src="/assets/location.svg" alt="" />
-            </div>
-            <div>
-              <p className="mb-0 mt-3">Address</p>
-              <p className="fw-semibold">Anna nagar, Chennai.</p>
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          <div className="row">
-            <div className="col-6 mb-3 px-3 py-3">
-              <input type="text" placeholder="Full name" className="px-3 py-2" />
-            </div>
-            <div className="col-6 mb-3 px-3 py-3">
-              <input
-                type="email"
-                name=""
-                id=""
-                placeholder="Your email"
-                className="px-3 py-2"
-              />
-            </div>
-            <div className="col-6 mb-3 px-3 py-3">
-              <input
-                type="number"
-                placeholder="Phone number"
-                className="px-3 py-2"
-              />
-            </div>
-            <div className="col-6 mb-3 px-3 py-3">
-              <input type="name" className="px-3 py-2" placeholder="Product" />
-            </div>
-            <div>
-              <textarea
-                name=""
-                id=""
-                placeholder="Message"
-                className="px-3 py-2 col-12"
-              ></textarea>
-            </div>
-            <div className="button-space d-flex mt-4">
-              <button className="ms-auto menu-btn">Submit Message</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section className="lower-footer d-flex container justify-content-between pt-4">
-      <div><p>@ 2024. All Rights Reserved</p></div>
-      <div className="d-flex gap-5">
-        <span>Home</span>
-        <span>Products</span>
-        <span>About</span>
-      </div>
-      <div>
-        <img src="/assets/india-mar.svg" alt="" className="me-3" />
-        <img src="/assets/jd.png" alt="" className="me-3" />
-        <img src="/assets/whatsapp.svg" alt="" />
-      </div>
-    </section>
-    <script src="script.js"></script>
+    <Footer />
     </>
   )
 }

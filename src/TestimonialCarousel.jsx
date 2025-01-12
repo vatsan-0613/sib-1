@@ -6,7 +6,7 @@ import star from "./assets/star.svg";
 
 const TestimonialCarousel = () => {
   const [productSlide, setProductSlide] = useState(0);
-  const productWidth = 397; // Width of each product (matches CSS)
+  const productWidth = 530; // Width of each product (matches CSS)
   const products = [
     {
         text: 'We will also facilitate the business marketing of these products with our SEO experts so that they become a ready-to-use website & help sell products from the company.',
@@ -85,7 +85,7 @@ const TestimonialCarousel = () => {
               <img src={star} alt=""/>
               <img src={star} alt=""/>
             </div>
-            <p className="mt-3">
+            <p className="mt-3 test-desc-text">
               {item.text}
             </p>
             <div className="d-flex align-items-center">
