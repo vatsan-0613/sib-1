@@ -35,14 +35,28 @@ const Carousel = () => {
         Products we <span className="blue-txt">offer for you</span>
       </h2>
       <p className="text-center sub-heading">With lots of unique blocks,</p>
-      <div className="buttons d-flex mb-3 gap-3 mt-3 mb-3">
+      {/* <div className="buttons d-flex mb-3 gap-3 mt-3 mb-3">
         <button className="forward left-arrow arrow-btn p-0" onClick={slideBackward} id="backward-btn">
           <img src={leftArrow} alt="Backward" className="arrow-img"/>
         </button>
         <button className="Backward arrow-btn p-0" onClick={slideForward} id="forward-btn">
           <img src={rightArrow} alt="Forward" className="arrow-img"/>
         </button>
-      </div>
+      </div> */}
+<div
+  className="arrow d-flex mb-3 gap-3 mt-3"
+>
+  <button className="forward left-arrow arrow-btn p-0" onClick={slideBackward} id="backward-btn">
+    <img src={leftArrow} alt="Backward" className="arrow-img" />
+  </button>
+  <button className="Backward arrow-btn p-0" onClick={slideForward} id="forward-btn">
+    <img src={rightArrow} alt="Forward" className="arrow-img" />
+  </button>
+</div>
+
+
+
+
       <div className="overflow-hidden">
       <div className="carousel d-flex gap-5 ps-5" id="product-carousel" style={{ transform: `translateX(-${productSlide * productWidth}px)`, transition: "transform 0.5s ease-in-out" }}>
         {products.map((product, index) => (

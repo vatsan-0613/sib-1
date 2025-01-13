@@ -95,13 +95,20 @@ body{
     background-color: rgba(0, 175, 239, 1);
     color : #fff;
     border-radius: 4px;
-    padding: 10px 20px;
+    padding: 14px 32px 14px 32px;
+    width: 210px;
+    height: 58px;
+    
 }
 
 .about-vision-text{
     font-size: 20px;
 }
 
+.arrow{
+    justify-content: right;
+    margin-right: 75px;
+}
 .left-arrow{
     margin-left: 75%;
 }
@@ -129,7 +136,7 @@ body{
 }
 
 #stats{
-    margin-top: 15%;
+    margin-top: 100px;
 }
 
 #products{
@@ -232,13 +239,15 @@ body{
 .help-img{
     width: 100%;
     opacity: 0.5;
+    height: 580px;
 }
 
 .help-text{
     position: absolute;
-    width: 100%;
-    top:38%;
-    left: 0;
+    width: 484px;
+    height: 48px;
+    top: 275px;
+    left: 478px;
     text-align: center;
     color: #fff;
 }
@@ -364,9 +373,13 @@ textarea{
 
 .about-hero-text{
     background-color : #FFFFFF99;
+    width: 840px;
+    height: 120px;
     opacity: 0.9;
     border-radius: 5px;
     padding : 2% 3%;
+    font-size: 40px;
+    align-content: center;
 }
 
 .about-center{
@@ -380,7 +393,8 @@ textarea{
 
 .about-img-1{
     border-radius: 8px;
-    width: 35%;
+    width: 503px;
+    height: 359px;
 }
 
 #vision{
@@ -389,7 +403,7 @@ textarea{
 }
 
 #choose-us{
-    margin-top: 10%;
+    margin-top: 100px;
     margin-bottom: 10%;
     background-color: #FBFBFB;
     padding : 5% 0;
@@ -398,7 +412,8 @@ textarea{
 
 .choose-card{
     background-color: #fff;
-    max-width: 350px;
+    height: 320px;
+    width: 292px;
 }
 
 .choose-card-head{
@@ -418,7 +433,10 @@ textarea{
 }
 
 .product-desc{
-    width : 80%;
+    height: 116px;
+    width : 501px;
+    font-size: 16px;
+    font-weight: 400;
     color : gray;
 }
 
@@ -428,7 +446,8 @@ textarea{
 
 .product-img{
     border-radius: 10px;
-    width: 100%;
+    height: 300px;
+    width: 501px;
 }
 
   

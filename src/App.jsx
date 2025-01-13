@@ -40,11 +40,15 @@ const App = () => {
               </li>
             </ul>
             <ul className="navbar-nav">
-              <li className="nav-item">
-                <img src="assets/phone.svg" alt="" />
+            <li className="nav-item">
+              <img src="assets/phone.svg" alt="" />
+              <a href="tel:+2349067322844" className="text-dark text-decoration-none">
                 <span>+2349067322844</span>
-              </li>
-            </ul>
+              </a>
+            </li>
+          </ul>
+
+
           </div>
         </div>
       </nav>

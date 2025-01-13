@@ -64,7 +64,7 @@ const Home = () => {
       >
         <div>
           <p className="fw-bold lh-base mb-3 hero-text">
-            A Tradition of Excellence commitment to quality of product
+            A Tradition of Excellence commitment to quality<br/> of product
           </p>
           <button className="menu-btn hero-btn">View Products</button>
         </div>
@@ -93,7 +93,7 @@ const Home = () => {
     <section id="stats" className="position-relative">
       
       <div
-        className="d-flex container justify-content-evenly flex-lg-row flex-column align-items-center"
+        className="d-flex container justify-content-evenly flex-lg-row flex-column align-items-center" 
       >
       <img
         src={transparent}
