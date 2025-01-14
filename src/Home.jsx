@@ -174,9 +174,8 @@ const Home = () => {
         <img src="assets/icon4.png" alt="" className='icon-4'/>
       </div>
     </section>
-    <section id="help">
+    <section id="help" className='d-flex justify-content-center align-items-center'>
       <div className="help-bg-container">
-        <img src={help} alt="" className="help-img" />
         <div className="text-center help-text">
           <span className="round-icon"
             ><img src={playBtn} alt=""
