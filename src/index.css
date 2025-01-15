@@ -570,6 +570,10 @@ textarea{
         width: 100%;
     }
 
+    .product-desc{
+        width: auto;
+    }
+
     .desc-text{
         font-size: 15px;
     }
