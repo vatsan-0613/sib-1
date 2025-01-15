@@ -6,6 +6,7 @@ import Products from "./Products";
 
 const App = () => {
   return (
+    <section id="header">
     <BrowserRouter>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container">
@@ -58,6 +59,7 @@ const App = () => {
         <Route path="/products" element={<Products />} />
       </Routes>
     </BrowserRouter>
+    </section>
   );
 };
 

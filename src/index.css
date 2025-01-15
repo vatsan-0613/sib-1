@@ -346,6 +346,9 @@ section{
     border-radius: 12px;
 }
 
+#footer{
+    max-width: 1440px;
+}
 input{
     width: 100%;
     border : 1px solid #C0C0C0; 
@@ -372,7 +375,9 @@ textarea{
 #about-hero{
     position: relative;
 }
-
+#header{
+    max-width: 1440px;
+}
 .about-hero-img{
     width: 100%;
 }
