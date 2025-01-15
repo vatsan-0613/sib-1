@@ -582,4 +582,30 @@ textarea{
         display: none;
     }
 
+    .about-hero-text{
+        background-color : #FFFFFF99;
+        width: 100%;
+        height: auto;
+        opacity: 0.9;
+        border-radius: 5px;
+        padding : 2% 3%;
+        font-size: 20px;
+        align-content: center;
+    }
+
+    .menu-btn{
+        border : none;
+        background-color: rgba(0, 175, 239, 1);
+        color : #fff;
+        border-radius: 4px;
+        padding: 12px 20px;
+        width: auto;
+        height: auto;
+        
+    }
+
+    .carousel{
+        padding-left: 0 !important;
+    }
+
 }
