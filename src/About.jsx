@@ -142,7 +142,7 @@ const About = () => {
     </section>
     <section id="choose-us">
         <h2 className="text-center fw-semibold section-text">Why Choose <span className="blue-txt">Us</span></h2>
-        <div className="container-fluid d-flex mt-5 gap-5 justify-content-between flex-lg-row flex-column">
+        <div className="container-fluid d-flex mt-5 gap-5 justify-content-between flex-lg-row flex-column align-items-center">
             <div className="text-center choose-card p-3">
                 <img src="/assets/service-icon-1.svg" alt="" className="mb-5" />
                 <h4 className='choose-card-head'>Quality Assurance</h4>

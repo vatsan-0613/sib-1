@@ -74,6 +74,14 @@ body{
 
 }
 
+section{
+    max-width: 1440px !important;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
 .navbar-brand, h3{
     font-style: "Poppins", serif;
 }
@@ -84,10 +92,6 @@ body{
 
 .hero-text{
     font-size: 40px;
-}
-
-.hero-btn{
-    margin-left: 25%;
 }
 
 .menu-btn{
@@ -233,7 +237,12 @@ body{
 
 #help{
     width: 100%;
+    height: 580px;
     margin-bottom: 10%;
+    background-image: url("assets/help-bg.png");
+    background-color: #161C2D;
+    background-blend-mode:lighten;
+    background-repeat: no-repeat;
 }
 
 .help-img{
@@ -243,7 +252,7 @@ body{
 }
 
 .help-text{
-    position: absolute;
+    /* position: absolute; */
     width: 484px;
     height: 48px;
     top: 275px;
@@ -262,11 +271,6 @@ body{
     padding: 10px 15px;
     background-color: #fff;
     border-radius: 50%;
-}
-
-.help-bg-container{
-    background-color: black;
-    position: relative;
 }
 
 .testimonial-card{
@@ -568,6 +572,10 @@ textarea{
         width: 100%;
     }
 
+    .product-desc{
+        width: auto;
+    }
+
     .desc-text{
         font-size: 15px;
     }
@@ -578,6 +586,32 @@ textarea{
 
     .icon-1, .icon-3, .boots-icon, .icon-4, .icon-5, .icon6, .icon7, .icon8{
         display: none;
+    }
+
+    .about-hero-text{
+        background-color : #FFFFFF99;
+        width: 100%;
+        height: auto;
+        opacity: 0.9;
+        border-radius: 5px;
+        padding : 2% 3%;
+        font-size: 20px;
+        align-content: center;
+    }
+
+    .menu-btn{
+        border : none;
+        background-color: rgba(0, 175, 239, 1);
+        color : #fff;
+        border-radius: 4px;
+        padding: 12px 20px;
+        width: auto;
+        height: auto;
+        
+    }
+
+    .carousel{
+        padding-left: 0 !important;
     }
 
 }
