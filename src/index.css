@@ -362,7 +362,9 @@ textarea{
     border-top: 1px solid #E1E1E1;
 }
 
-
+#hero{
+    max-width: 1440px;
+}
 #about-hero{
     position: relative;
 }
