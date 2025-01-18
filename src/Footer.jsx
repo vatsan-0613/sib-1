@@ -58,7 +58,7 @@ const Footer = () => {
           </div>
           <div className="container">
             <div className="row">
-              <div className="col-6 mb-3 px-3 py-3">
+              {/* <div className="col-6 mb-3 px-3 py-3">
                 <input type="text" placeholder="Full name" className="px-3 py-2" />
               </div>
               <div className="col-6 mb-3 px-3 py-3">
@@ -72,7 +72,22 @@ const Footer = () => {
               </div>
               <div>
                 <textarea placeholder="Message" className="px-3 py-2 col-12"></textarea>
+              </div> */}
+              <div className="col-12 col-sm-6 mb-3 px-3 py-3">
+                <input type="text" placeholder="Full name" className="px-3 py-2" />
               </div>
+              <div className="col-12 col-sm-6 mb-3 px-3 py-3">
+                <input type="email" placeholder="Your email" className="px-3 py-2" />
+              </div>
+              <div className="col-12 col-sm-6 mb-3 px-3 py-3">
+                <input type="number" placeholder="Phone number" className="px-3 py-2" />
+              </div>
+              <div className="col-12 col-sm-6 mb-3 px-3 py-3">
+                <input type="text" placeholder="Product" className="px-3 py-2" />
+              </div>
+              <div>
+                <textarea placeholder="Message" className="px-3 py-2 col-12"></textarea>
+              </div> 
               <div className="button-space d-flex mt-4">
                 <button className="ms-auto menu-btn">Submit Message</button>
               </div>
